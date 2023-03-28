@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О курсе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-header">
+        <div class="header">
+            <a class="logo" href="index.html">
+                <img src="./img/logo.jpg.jpg" alt="logotype">
+            </a>
+            <ul class="menu">
+                <li class="menu_list"><a class="menu_link" href="index.html">Главная</a></li>
+                <li class="menu_list"><a class="menu_link" href="students.html">Студенты</a></li>
+                <li class="menu_list "><a class="menu_link menu_link_active" href="about.html">О курсе</a></li>
+                <li class="menu_list"><a class="menu_link" href="contaks.html">Контакты</a></li> 
+            </ul>
+            <a class="buttom" href="#">Войти </a>
+        </div>
+        <div class="content_about">
+            <h1 class="about">О курсе 📱</h1>
+            <p class="about_video">Посмотрите видео о нас</p>
+            <img class="video" src="./img/video.jpg.jpg" alt="video">
+        </div>
+        </div>
+    <footer class="footer ">
+        <p class="footer_text"> 2023 &copy; <a class="centr" href="#">учебный центр</a> </p>
+    </footer>   
+    <div class="popup">
+        <p class="first_text">Войти на сайт</p>
+        <input class="input input_login" type="text" placeholder="Логин">
+        <input class="input input_password"  type="password" placeholder="Пароль">
+        <a class="buttom_2" href="#">Войти</a>
+    </div>
+    <script>
+        const buttonElement = document.querySelector('.buttom');
+        const blockElement = document.querySelector('.popup');
+        buttonElement.addEventListener ('click', function (e)
+        {
+            blockElement.classList.toggle('visible')    
+        })
+    </script>
+</body>
+</html>
